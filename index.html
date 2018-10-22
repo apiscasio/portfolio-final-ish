@@ -29,19 +29,18 @@
 		<div class="page">
 			<div class="header">
 				<h1> Abigail Piscasio </h1>
+				<img class="animated rotateIn" src="assets/images/aplogo.png">
 				<h2> Full Stack Developer </h2>
 			</div> <!-- end of header -->
 			
-			<nav class="mainnav">
-				<div class="logo">
-					<a href="#bannersection"></a>
-				</div>
+			<nav class="mainnav animated flash">
+			
 				<div class="row">
-					<div class="row1 col-lg-3 offset-lg-3 col-12">
+					<div class="row1a col-lg-3 offset-lg-3 col-12">
 						<button class="btn-main"><a href="#resume">R</a></button>
 						<h3><a href="#resume">Resume</a></h3>
 					</div>
-					<div class="row1 col-lg-3 offset-lg-2 col-12">
+					<div class="row1b col-lg-3 offset-lg-2 col-12">
 						<h3><a href="#portfolio">Portfolio</a></h3>
 						<button class="btn-main"><a href="#portfolio">P</a></button>
 					</div>
@@ -59,13 +58,16 @@
 					</div>
 				</div><!-- end of about me contact me row -->
 
+				<p>"It’s not about perfect. It’s about effort. And when you bring that effort every single day, that’s</p>
+				<p>where transformation happens. That’s how change occurs." – Jillian Michaels</p>
+
 			</nav> <!-- end of landing page / nav -->
 
 			<div id="aboutme" class="aboutme"> 
-				<!-- <div class="row"> -->
-					<h2> About Me </h2>
 
-				<div class="aboutme-content">
+				<h2> About Me </h2>
+
+				<div class="aboutme-container">
 					<div class="p-content col-lg-9">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -76,7 +78,7 @@
 					</div>
 					
 					<div class="row">
-						<ul class="nav sticky-top flex-column col-lg-2 offset-lg-10">
+						<ul class="nav sticky-top flex-column col-lg-6 offset-lg-6">
 						  <li class="nav-item">
 						    <a class="nav-link active" href="#">Home</a>
 						  </li>
@@ -91,15 +93,17 @@
 						  </li>
 						</ul>
 					</div> <!-- end of right nav -->
-				</div> <!-- end of about me content -->				
+
+				</div> <!-- end of about me container -->				
 			</div> <!-- end of about me -->
 
 			<div id="portfolio" class="portfolio">
 
 				<h2> Portfolio </h2>
+
 				<div class="row">
-					
-					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+					<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
 					      <img class="d-block w-100" src="assets/images/1.jpg" alt="Capstone 1">
@@ -140,9 +144,37 @@
 					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 					    <span class="sr-only">Next</span>
 					  </a>
-					</div> <!-- enf of carousel -->
+					</div> --> <!-- enf of carousel -->
+
+					<div class="capstone-container">
+						<div class="capstone-content1 col-lg-4">
+							<a href="#"><h3> Capstone 1 </h3>
+							<img src="assets/images/1.jpg">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></a>
+							
+						</div>
+						<div class="capstone-content2 col-lg-4">
+							<h3> Capstone 1 </h3>
+							<img src="assets/images/1.jpg">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</div>
+						<div class="capstone-content3 col-lg-4">
+							<h3> Capstone 1 </h3>
+							<img src="assets/images/1.jpg">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</div>
+
+						
+					</div>
 
 				</div> <!-- end of row -->
+
 			</div> <!-- end of portfolio -->
 
 			<div id="resume" class="resume">
@@ -154,19 +186,19 @@
 				<h2>Contact Me</h2>
 
 				<form>
-				  <div class="form-group col-lg-6 offset-lg-3">
-				  	<label for="nameinput">Name</label>
-				    <input type="email" class="form-control" id="nameinput" placeholder="Juana Dela Cruz">
+				  	<div class="form-group col-lg-6 offset-lg-3">
+					  	<label for="nameinput">Name</label>
+					    <input type="email" class="form-control" id="nameinput" placeholder="Juana Dela Cruz">
 
-				  	<label for="emailinput">Email address</label>
-				    <input type="email" class="form-control" id="emailinput" placeholder="name@example.com">
+					  	<label for="emailinput">Email address</label>
+					    <input type="email" class="form-control" id="emailinput" placeholder="name@example.com">
 
-				    <label for="textinput">Message</label>
-				    <textarea class="form-control" id="textinput" rows="3"></textarea>
+					    <label for="textinput">Message</label>
+					    <textarea class="form-control" id="textinput" rows="3" placeholder="Your message here"></textarea>
 
-				    <button> Send </button>
+					    <button> Submit </button>
 
-				  </div>
+					  </div>
 				 </form>
 
 			</div> <!-- end of contact me -->
