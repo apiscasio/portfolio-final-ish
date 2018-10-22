@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+.page {
+	position: relative;
+}
+
+.mainnav {
+	height: 100vh;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-attachment: fixed;*/
+}
+
+.header {
+	position: absolute;
+	transform: translate(80%, 410%);
+	color: black;
+	margin-top: 10px;
+	border: 5px solid black;
+	padding: 20px 50px 20px 50px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: lightgray;
+	border-radius: 50px;	
+}
+
+
+.header > h2 {
+	margin-top: 10px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	/*margin-bottom: 8px;*/
+}
+
+.row1 {
+	float: left;
+	/*text-align: center;*/
+	margin-top: 160px;
+	/*justify-content: flex-start;*/
+	left: 3%;
+}
+
+.row2 {
+	margin-top: 25px;
+	left: 7%;
+}
+
+.row3 {
+	margin-top: 2px;
+	left: 2%;
+}
+
+.row1 > .btn-main,
+.row2 > .btn-main,
+.row3 > .btn-main {
+	width: 85px;
+	height: 85px;
+	border-radius: 50px;
+	background-color: #b0d7ff;
+	border: 5px solid #2d3142;
+	font-size: 25px;
+	font-weight: 700;
+	float: left;
+	color: 	#d8d5db;
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+}
+
+.btn-main > a {
+	color: black;
+	padding: 0 10px 0 10px;
+	border-radius: 10px;
+}
+
+.row1 > h3,
+.row2 > h3,
+.row3 > h3 {
+	float: left;
+	margin-top: 30px;
+	font-family: 'Special Elite', cursive;
+	display: none;
+}
+
+.btn-main:hover > h3 {
+	background-color: black;
+	color:	white;
+	display: block;
+}	
+
+
+/*.row1 > h3 > a {
+
+}*/
+
+/*.mainnav a:hover {
+	background-color: #b0d7ff;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 0 10px 0 10px;
+	color: black;
+}*/
+
+/*#enter {
+	position: absolute;
+	transform: translate(350%, 350%);
+	border: 5px solid black;
+	padding: 10px 20px 10px 20px;
+}
+
+#enter:hover {
+	background-color: black;
+	color: lightgray;
+}*/
+
+/*---------------------------end of main--------------------------*/
+
+.aboutme {
+	height: 60vh;
+	background-image: url(../images/bg6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.aboutme-content,
+.nav {
+	float: left;
+}
+
+
+.nav-link {
+	text-align: center;
+	padding: 20px 0 20px 0;
+	border-radius: 0;
+	position: sticky;
+	transform: translate(0,0);
+}
+
+.nav-item > a {
+	color: lightgray;
+	background-color: black;
+	padding: 20px 10px 20px 10px;
+	font-size: 18px;
+}
+
+.aboutme > h2 {
+	background-color: #2d3142;
+	color: lightgray;
+	padding: 20px;
+}
+
+.p-content {
+	background-color: 	rgba(234,232,255);
+}
+
+/*---------------------------end of about me--------------------------*/
+
+.portfolio {
+	height: 100vh;
+	background-image: url(../images/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.portfolio > h2 {
+	background-color: #2d3142;
+	color: lightgray;
+	padding: 20px;
+}
+
+.carousel {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 70%;
+  height: 60%;
+  transform: translate(20%, 0);
+}
+
+.carousel-item {
+	width: 600px;
+	height: 500px;
+}
+
+
+/*---------------------------end of portfolio--------------------------*/
+
+.contactme {
+	height: 60vh;
+	background-image: url(../images/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.contactme > h2 {
+	background-color: #2d3142;
+	color: lightgray;
+	padding: 20px;
+}
+
+.form-group > button {
+	float: right;
+}
+
+
+/*---------------------------end of contact me--------------------------*/
+
+.footer {
+	background-color: #2d3142;
+	color: lightgray;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+.footer > small:hover {
+	font-weight: 700;
+}
+
+img[alt*=social] {
+	width: 20px;
+	height: 20px;
+	/*border: 1px solid black;*/
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+img[alt*=social]:hover {
+	width: 30px;
+	height: 30px;
+}
+
+.contact {
+	float: right;
+}
+
+/*desktop rules*/
+@media only screen and (min-width: 961px) {
+
+}
+
+/*tablet rules*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/*mobile rules*/
+@media only screen and (max-width: 400px) {
+	.row1,
+	.row2,
+	.row3 {
+		display: none;
+	}
+
+}
