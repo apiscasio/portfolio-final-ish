@@ -18,22 +18,55 @@ body {
 .landing-page {
 	width: 100vw;
 	height: 100vh;
+	background-image: url(https://media.giphy.com/media/2LUEw0BZVKFYk/giphy.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
+/*tiffany*/
 .rectangle {
 	background-color: #0abab5;
+	/*opacity: .5;*/
 	width: 54.5%;
 	height: 100%;
 	float: left;
 }
 
+/*white*/
 .rectangle1 {
-	/*background-color: #f9f4ef;*/
-	background-color: white;
+	background-color: #f9f4ef;
+	/*background-color: white;*/
+	opacity: .7;		
 	width: 45.5%;
 	height: 100%;
 	float: left;
 }
+
+/*--------------------------- start of text effect -----------------------------*/
+
+.landing-header1 {
+	height: 100vh;
+	letter-spacing: 5px;
+	top: 50%;
+    left: 23.5%;
+    transform: translate(0,-25%);
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hello1 {
+	background-image: url(https://media.giphy.com/media/2LUEw0BZVKFYk/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 250px;
+	line-height: .75;
+}
+
+/*--------------------------- end of text effect -----------------------------*/
 
 
 .left-sidebar {
@@ -68,8 +101,8 @@ body {
 	-webkit-animation:colorchange 20s infinite alternate;
 }
 
-/*animation color change*/
-@-webkit-keyframes colorchange {
+/* -------------------------- animation color change -----------------------------*/
+/*@-webkit-keyframes colorchange {
   0% {
 
     color: #fff;
@@ -123,7 +156,9 @@ body {
 
     color: #fff;
   }
-}
+}*/
+
+/* -------------------------- animation color change -----------------------------*/
 
 #llo {
 	display: inline;
@@ -131,11 +166,12 @@ body {
 
 .dot {
 	background-color: #ce9a6f;
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	display: inline-block;
 	margin-left: 5px;
+	z-index: 455;
 	/*-webkit-animation:colorchange 20s infinite alternate;*/
 }
 
@@ -159,9 +195,8 @@ body {
 }
 
 .right-sidebar .fab:hover  {
-
     font-size: 40px;
-
+    
 }
 
 .right-sidebar > .fabcontact a {
@@ -337,7 +372,7 @@ h1 {
 	margin-bottom: 40px;
 	background-color: #06716e;
 	padding: 10px 20px 10px 20px;
-	border-radius: 25px;
+	border-radius: 10px;
 	border-right: 2px solid #022827;
 	border-bottom: 2px solid #022827;
 }
@@ -470,7 +505,6 @@ h1 {
 .contact-container .form-group {
 	border-radius: 0;
 }
-
 
 .left-form {
 	padding: 5px;
