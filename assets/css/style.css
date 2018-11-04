@@ -241,6 +241,65 @@ body {
 }
 
 
+
+/*tablet rules*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+	.landing-page {
+		background-image: none;
+	}
+
+	.hello1 {
+		font-size: 200px;
+	}
+
+	.landing-header1 {
+		transform: translateY(-15%);
+	}
+}
+
+/*mobile rules*/
+@media only screen and (max-width: 400px) {
+
+	
+	.landing-page {
+		background-image: none;
+		overflow-y: hidden !important;
+	}
+
+	.hello1 {
+		font-size: 100px;
+	}
+
+	.landing-header1 {
+		transform: translateY(-15%);
+	}
+
+	.dot {
+		width: 30px;
+		height: 30px;
+	}
+
+	.left-sidebar a {
+		font-size: 16px;
+	}
+
+	.left-sidebar {
+		transform: translateY(75%);
+	}
+
+	.right-sidebar {
+		transform: translateY(-125%);
+	}
+
+	.home {
+		transform: translate(0,-50%);
+	}
+}
+
+
+
+
 /*------------ start of home page -------------*/
 #navbar {
 	padding-right: 7.5%;
@@ -377,7 +436,6 @@ h1 {
 	border-bottom: 2px solid #022827;
 }
 
-
 #about-section .card-body {
 	min-height: 500px;
 }
@@ -440,6 +498,14 @@ h1 {
 
 #portfolio-section .card-body h5 {
 	color: #323232;
+}
+
+#portfolio-section img {
+	max-height: 180px;
+}
+
+#carouselCapstones img {
+	max-height: 180px;
 }
 
 
@@ -543,6 +609,10 @@ h1 {
 
 #contact .fabcontact a {
 	color: #fff;
+}
+
+#contact .fabcontact a:hover {
+	color: #333;
 }
 
 #contact {
